@@ -1,0 +1,35 @@
+#options-div {
+  display: none;
+  width: 100%;
+  margin: auto;
+}
+
+.option-list {
+  width: 100%;
+  max-width: 25.8rem;
+  text-align: center;
+  margin: 3rem auto;
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  grid-gap: 4%;
+}
+
+.option-list li {
+  background-color: black;
+  transition-property: background-color;
+  transition-duration: 1s;
+  /* height: 8rem; */
+  padding-top: 100%;
+  border-radius: 5px;
+}
+
+.option-list li:hover {
+  cursor: pointer;
+}
+
+.remove {
+  background-color: #00203fff !important;
+}
+.remove:hover {
+  cursor: default !important;
+}

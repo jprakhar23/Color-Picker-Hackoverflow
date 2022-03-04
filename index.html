@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/base.css" />
+    <link rel="stylesheet" href="./styles/header.css" />
+    <link rel="stylesheet" href="./styles/nav.css" />
+    <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="stylesheet" href="./styles/game.css" />
+    <script src="./script/game.js" defer></script>
+    <script src="./script/start-game.js" defer></script>
+    <script src="./script/app.js" defer></script>
+
+    <title>The Great Color Game</title>
+  </head>
+  <body>
+    <header>
+      <h1 id="title">The Great Color Game</h1>
+      <div class="color-rgb-code">rgb( .. , .. , .. )</div>
+    </header>
+    <nav>
+      <ul>
+        <div class="game-buttons-div">
+          <li class="game-buttons" id="start-game-btn" data-diff="6">
+            Start Game
+          </li>
+          <li class="game-buttons" id="new-color-btn" data-diff="6">
+            New Color
+          </li>
+        </div>
+
+        <div class="level-buttons-div">
+          <li class="level-buttons" id="easy-btn" data-diff="3">Easy</li>
+          <li class="level-buttons" id="hard-btn" data-diff="6">Hard</li>
+        </div>
+      </ul>
+    </nav>
+    <main>
+      <div class="start-text"><p>Press start game to begin!</p></div>
+      <div class="try-again">
+        <p>Try Again!</p>
+      </div>
+      <div id="options-div">
+        <ul class="option-list">
+          <li data-num="0"></li>
+          <li data-num="1"></li>
+          <li data-num="2"></li>
+          <li data-num="3"></li>
+          <li data-num="4"></li>
+          <li data-num="5"></li>
+        </ul>
+      </div>
+      <div class="game-end"></div>
+    </main>
+  </body>
+</html>
